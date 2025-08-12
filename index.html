@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Content & Form Demo</h1>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Student Scores</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Math</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Science</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Inspirational Video</h2>
+            <video controls width="320">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="07XX-XXX-XXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="5" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label>
+                        <input type="checkbox" name="subscribe" checked>
+                        Subscribe to newsletter
+                    </label><br><br>
+
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">--Select--</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select><br><br>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
